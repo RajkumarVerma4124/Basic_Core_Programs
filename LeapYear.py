@@ -7,14 +7,15 @@ class Leapyear:
 	def checkYearLength(self):
 		if (self.year < 1000) :
 			print("Enter The Four Digit Year ")
-			exit()		
+			exit()
+		
 	def checkLeapOrNot(self):
 		if (self.year % 4 == 0 and self.year % 100 != 0 or self.year % 400 == 0):
 			print("It is a leap year")
 		else:
 			print("it is not a leap year")
 
-# creating objects of class Human
+# creating objects of class Leapyear
 yearObj = Leapyear()
 yearObj.checkYearLength()
 yearObj.checkLeapOrNot()
